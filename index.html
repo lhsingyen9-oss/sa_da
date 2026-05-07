@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餓搞食堂 - 風趣菜單</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #FFFBEB; /* 暖黃色背景，促進食慾 */
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23fcd34d" fill-opacity="0.2"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+        }
+        .emoji-img {
+            text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+    <!-- 餐廳標頭 -->
+    <header class="max-w-4xl mx-auto text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-black text-red-600 mb-4 tracking-wider transform -rotate-2">
+            🤪 餓搞食堂
+        </h1>
+        <p class="text-xl md:text-2xl font-bold text-orange-500 bg-white inline-block px-6 py-2 rounded-full shadow-md transform rotate-1">
+            我們保證：難吃不用錢（但你還是得付錢）
+        </p>
+    </header>
+
+    <!-- 菜單網格 -->
+    <main class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 1 Hot Dog -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-yellow-400 group relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-red-500 text-white font-bold py-1 px-4 rounded-bl-xl z-10">熱銷</div>
+            <div class="h-48 flex items-center justify-center bg-yellow-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🌭</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">單身狗專屬熱狗</h2>
+            <p class="text-gray-600 mb-4 h-16">寂寞的時候，至少還有它陪你。長長一根，撫慰你空虛的胃與心靈。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$87</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- 2 Hot Dogs -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-red-400 group">
+            <div class="h-48 flex items-center justify-center bg-red-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform space-x-[-1rem]">
+                <span class="text-7xl emoji-img transform -rotate-12">🌭</span>
+                <span class="text-7xl emoji-img transform rotate-12">🌭</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">放閃雙倍熱狗組</h2>
+            <p class="text-gray-600 mb-4 h-16">單身狗請閉眼！這可是給有伴的人（或單純餓死鬼）準備的雙重享受。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$174</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- 1 Hamburger -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-orange-400 group">
+            <div class="h-48 flex items-center justify-center bg-orange-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🍔</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">壓扁也塞不進漢堡</h2>
+            <p class="text-gray-600 mb-4 h-16">一口咬下，肉汁噴射！請小心不要滴到你剛買的那件昂貴白襯衫。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$120</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- 2 Hamburgers -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-blue-400 group relative">
+            <div class="absolute top-0 right-0 bg-blue-500 text-white font-bold py-1 px-4 rounded-bl-xl z-10">不合理</div>
+            <div class="h-48 flex items-center justify-center bg-blue-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform flex-col space-y-[-2rem]">
+                <span class="text-6xl emoji-img z-10">🍔</span>
+                <span class="text-7xl emoji-img z-0">🍔</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">下巴脫臼雙漢堡</h2>
+            <p class="text-gray-600 mb-4 h-16">買兩個不是因為吃得下，是因為廚師做兩個比較煩所以賣更貴。吃完請掛骨科。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$250</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- Salad -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-green-400 group relative">
+            <div class="absolute top-0 right-0 bg-green-500 text-white font-bold py-1 px-4 rounded-bl-xl z-10">假裝健康</div>
+            <div class="h-48 flex items-center justify-center bg-green-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🥗</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">騙自己會瘦的草</h2>
+            <p class="text-gray-600 mb-4 h-16">吃完這盤毫無靈魂的草，你就可以心安理得地去加點上面的雙層漢堡了。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$999</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- Milk -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-gray-300 group">
+            <div class="h-48 flex items-center justify-center bg-gray-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🥛</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">媽寶特調牛奶</h2>
+            <p class="text-gray-600 mb-4 h-16">喝了會長高高喔！如果你已經三十歲了，那...喝了只會長肉肉。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$50</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- Juice -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-orange-300 group">
+            <div class="h-48 flex items-center justify-center bg-orange-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🧃</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">水果的眼淚果汁</h2>
+            <p class="text-gray-600 mb-4 h-16">我們把水果逼到了絕境，才擠出這一杯。滿滿的維他命C與無奈。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$65</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- Water -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-cyan-300 group">
+            <div class="h-48 flex items-center justify-center bg-cyan-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">💧</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">國王的高級飲料</h2>
+            <p class="text-gray-600 mb-4 h-16">其實就是白開水。但我們加了「信仰」，喝起來特別甜。重點是：老闆請客！</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$0</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+        <!-- Ice Cream -->
+        <div class="bg-white rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-4 border-pink-400 group">
+            <div class="h-48 flex items-center justify-center bg-pink-50 rounded-2xl mb-4 group-hover:scale-105 transition-transform">
+                <span class="text-8xl emoji-img">🍦</span>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">融化你心的脂肪球</h2>
+            <p class="text-gray-600 mb-4 h-16">裝在「另一個胃」裡的酷東西。吃完這口，我們明天再討論減肥的事。</p>
+            <div class="flex justify-between items-center border-t-2 border-gray-100 pt-4">
+                <span class="text-3xl font-black text-red-500">$無價</span>
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-full transition-colors">點下去</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="mt-20 text-center text-gray-500 font-medium">
+        <p>© 2026 餓搞食堂. 點擊「點下去」按鈕並不會發生任何事，因為我們還沒請工程師。</p>
+    </footer>
+
+    <script>
+        // 幫所有的按鈕加上一個幽默的彈出訊息（可選互動）
+        const buttons = document.querySelectorAll('button');
+        const jokes = [
+            "老闆不在家，這道菜暫停供應！",
+            "你的卡刷不過喔，請付現金！",
+            "確定要吃這個？你這禮拜已經胖兩公斤了！",
+            "點餐系統罷工中，請大喊『老闆肚子餓』來點餐。",
+            "這個賣完了，你要不要考慮喝那杯 $0 元的水？"
+        ];
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 隨機挑選一個笑話
+                const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+                // 創建一個簡單的提示框代替 alert (因為環境限制)
+                const toast = document.createElement('div');
+                toast.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-900 text-white px-6 py-4 rounded-xl shadow-2xl font-bold z-50 text-center animate-bounce';
+                toast.innerText = randomJoke;
+                document.body.appendChild(toast);
+                
+                // 2.5秒後消失
+                setTimeout(() => {
+                    toast.remove();
+                }, 2500);
+            });
+        });
+    </script>
+</body>
+</html>
